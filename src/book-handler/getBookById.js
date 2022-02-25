@@ -3,9 +3,9 @@ const books = require('../books');
 const getBookById = (request, h) => {
   const { id } = request.params;
 
-  const book = books.filter((n) => n.id === id)[0];
+  const book = books.filter((book) => book.id === id)[0];
 
-  if (book !== undefined) {
+  if (book) {
     const response = h.response({
       status: 'success',
       data: {
