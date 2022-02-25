@@ -5,7 +5,9 @@
         "es2021": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "some-other-config-you-use",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
