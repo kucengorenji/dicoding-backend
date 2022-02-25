@@ -24,4 +24,4 @@ const getBookById = (request, h) => {
   return response;
 };
 
-module.exports = getBookById;
+module.exports = { getBookById };

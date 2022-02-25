@@ -7,4 +7,4 @@ const getAllBooks = () => ({
   },
 });
 
-module.exports = getAllBooks;
+module.exports = { getAllBooks };

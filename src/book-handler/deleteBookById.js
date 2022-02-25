@@ -23,4 +23,4 @@ const deleteBookById = (request, h) => {
   return response;
 };
 
-module.exports = deleteBookById;
+module.exports = { deleteBookById };
