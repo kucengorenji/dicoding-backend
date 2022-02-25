@@ -12,9 +12,9 @@ const editBookById = (request, h) => {
     readPage,
     reading,
   } = request.payload;
-
   const updatedAt = new Date().toISOString();
   const index = books.findIndex((book) => book.id === id);
+  const finished = pageCount === readPage;
 
   if (!name) {
     const response = h.response({
@@ -46,6 +46,7 @@ const editBookById = (request, h) => {
       pageCount,
       readPage,
       reading,
+      finished,
       updatedAt,
     };
 
